@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="marketPlaceOwnItemsWidget" width="20" height="20" version="0.0">
+  <window>
+    <container x="0" y="0" width="330" height="358" params="17" style="0" name="market_place_content">
+      <children>
+        <text x="0" y="0" width="312" height="12" params="16" style="0" name="status_text">
+          <variables>
+            <var key="font_face" value="Volter" type="String"/>
+            <var key="font_size" value="9" type="uint"/>
+            <var key="text_color" value="0x0" type="hex"/>
+            <var key="embed_fonts" value="true" type="Boolean"/>
+          </variables>
+        </text>
+        <itemlist x="0" y="15" width="300" height="304" params="17" style="0" name="item_list" tags="own_items_grid">
+          <variables>
+            <var key="spacing" value="1" type="int"/>
+            <var key="scale_to_fit_items" value="true" type="Boolean"/>
+          </variables>
+        </itemlist>
+        <scrollbar_vertical x="305" y="15" width="20" height="303" params="17" style="0" name="grid_scroll">
+          <variables>
+            <var key="scrollable" value="item_list" type="String"/>
+          </variables>
+        </scrollbar_vertical>
+        <button x="112" y="324" width="189" height="24" params="393233" style="0" name="redeem_sold" caption="%24%7Bcatalog.marketplace.offer.redeem%7D"/>
+      </children>
+    </container>
+  </window>
+</layout>
